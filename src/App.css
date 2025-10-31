@@ -1,6 +1,6 @@
-/* src/App.css (Cleaned and Compressed) */
+/* src/App.css */
 
-/* Global Variables & Base Styles (Assume you have these defined elsewhere or this is for light theme) */
+/* Global Variables & Base Styles */
 :root {
   --bg-primary: #ffffff;
   --bg-secondary: #f8f9fa;
@@ -193,21 +193,26 @@ h2 {
 .project-card-link {
   text-decoration: none;
   color: inherit;
+  display: block; /* Penting untuk transisi */
+  /* UPGRADE HOVER TAMBAHAN */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+.project-card-link:hover {
+  /* UPGRADE HOVER TAMBAHAN */
+  transform: translateY(-8px); /* Angkat lebih tinggi */
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12); /* Bayangan lebih besar */
+}
+
 
 .project-card {
   background-color: #f8f9fa;
   border: 1px solid var(--border-light);
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-  padding: 0; /* Adjust for image styling */
+  /* Hapus transisi dari sini agar tidak konflik dengan .project-card-link */
+  padding: 0; 
   overflow: hidden;
-}
-
-.project-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
 }
 
 .project-image {
@@ -285,15 +290,30 @@ h2 {
 .skill-card {
   font-weight: 600;
   color: var(--text-primary);
+  /* UPGRADE HOVER TAMBAHAN */
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.skill-card:hover {
+  /* UPGRADE HOVER TAMBAHAN */
+  transform: translateY(-5px); /* Angkat kartu */
+  color: var(--text-dark); /* Ubah warna teks */
 }
 
 .skill-card svg {
   font-size: 4rem; 
   margin-bottom: 0.5rem;
   color: var(--text-dark);
+  /* UPGRADE HOVER TAMBAHAN */
+  transition: color 0.3s ease;
 }
 
-/* --- Utilities --- */
+.skill-card:hover svg {
+  /* UPGRADE HOVER TAMBAHAN */
+  color: var(--btn-primary-bg); /* Ubah warna ikon jadi biru */
+}
+
+/* --- 6. Utilities (Animasi) --- */
 .fade-in-section {
   opacity: 0;
   transform: translateY(20px);
@@ -306,9 +326,8 @@ h2 {
 }
 
 
-/* --- Media Queries (Responsiveness) --- */
-
-/* Tablet and below (max 768px) */
+/* --- 7. Media Queries (Responsiveness) --- */
+/* (Kode ini tetap sama, tidak ada perubahan) */
 @media (max-width: 768px) {
   .hero, 
   .about-container {
@@ -334,17 +353,14 @@ h2 {
   }
 
   .nav-menu {
-    /* Hide menu on small screen for now */
     display: none; 
   }
 
   .project-grid {
-    /* Change to single column */
     grid-template-columns: 1fr;
   }
 }
 
-/* Mobile (max 480px) */
 @media (max-width: 480px) {
   .container {
     padding: 0 1rem;
