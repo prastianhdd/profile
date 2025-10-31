@@ -1,17 +1,38 @@
 /* src/index.css */
-body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f4f4f4;
+
+/* Definisikan Palet Warna "Calm Blue" kita */
+:root {
+  --bg-primary: #e3f2fd;    /* Latar belakang global (Biru Sangat Muda) */
+  --bg-secondary: #ffffff;  /* Latar belakang Kartu/Konten (Putih) */
+  --text-dark: #1a237e;      /* Judul Utama (Biru Tua) */
+  --text-primary: #1565c0;    /* Judul Sekunder / Link (Biru Sedang) */
+  --text-secondary: #334e68; /* Teks Paragraf (Abu-abu Kebiruan) */
+  --border-light: #bbdefb;    /* Border (Biru Muda) */
+  --btn-primary-bg: #1976d2; /* Tombol Primary (Biru) */
+  --btn-primary-text: #ffffff; /* Teks Tombol Primary */
 }
 
+/* Reset Dasar */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth; /* Efek scroll halus saat klik nav */
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--bg-primary);
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+/* Utility class untuk container */
 .container {
-  max-width: 900px;
-  margin: 2rem auto;
-  padding: 1.5rem;
-  background-color: #ffffff;
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 2rem;
 }
