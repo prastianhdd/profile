@@ -2,7 +2,7 @@
 
 Ini adalah kode sumber untuk website portofolio pribadi saya, dibangun dari awal menggunakan React, Vite, dan di-hosting di Vercel.
 
-**Tautan Demo Langsung:** [**https://prastianhdd.vercel.app/**](https://prastianhdd.vercel.app/)
+**Tautan Demo Langsung:** [**Website**](https://prastianhdd.vercel.app/)
 
 ---
 
