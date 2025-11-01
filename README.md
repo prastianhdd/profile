@@ -1,20 +1,57 @@
-<<<<<<< HEAD
-# React + Vite
+# Portofolio Pribadi (React + Vite)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Ini adalah kode sumber untuk website portofolio pribadi saya, dibangun dari awal menggunakan React, Vite, dan di-hosting di Vercel.
 
-Currently, two official plugins are available:
+**Tautan Demo Langsung:** [**https://prastianhdd.vercel.app/**](https://prastianhdd.vercel.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+### Tentang Proyek
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Website ini berfungsi sebagai portofolio digital untuk memamerkan proyek-proyek, keahlian teknis, dan latar belakang saya sebagai seorang mahasiswa Ilmu Komputer. Dibuat dengan fokus pada desain yang bersih, *responsive*, dan interaktif.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-=======
-# profile
->>>>>>> f828185c2616409c56dcaa8169b736b3715e3f84
+### Fitur Utama
+
+* **Desain Modern & Responsif:** Dapat diakses dengan baik di perangkat desktop maupun *mobile*.
+* **Komponen Dinamis:** Bagian proyek di-render secara dinamis dari sebuah *array* data, membuatnya mudah untuk diperbarui.
+* **Animasi Interaktif:** Efek "fade-in" saat *scroll* (menggunakan `react-intersection-observer`) dan efek *hover* yang halus pada elemen-elemen kunci.
+* **Struktur Profesional:** Termasuk bagian *Hero*, *About Me* (dengan foto), *Skills* (dengan ikon), *Projects* (dengan *tag* teknologi), dan *Footer* yang profesional.
+* **Tech Stack Tags:** Setiap kartu proyek menampilkan teknologi yang digunakan, memberikan konteks instan.
+
+---
+
+### Menjalankan Secara Lokal
+
+Untuk menjalankan proyek ini di mesin lokal Anda:
+
+1.  **Clone repositori ini:**
+    ```bash
+    git clone [https://github.com/prastianhdd/profile.git](https://github.com/prastianhdd/profile.git)
+    ```
+
+2.  **Masuk ke direktori proyek:**
+    ```bash
+    cd profile
+    ```
+
+3.  **Install semua dependensi:**
+    ```bash
+    npm install
+    ```
+
+4.  **Jalankan server development:**
+    ```bash
+    npm run dev
+    ```
+
+5.  Buka [http://localhost:5173](http://localhost:5173) 
+
+---
+
+### Deployment
+
+Proyek ini di-deploy dan di-hosting menggunakan **Vercel**.
+
+Setiap *push* ke *branch* `main` akan secara otomatis memicu *build* dan *deployment* baru (CI/CD), memastikan situs selalu *up-to-date* dengan kode terbaru.
